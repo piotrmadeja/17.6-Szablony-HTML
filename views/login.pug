@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  head
+    title Google Authentication
+    style
+      include style.css
+  body
+    div.loginDiv
+      h1 Enter correct data to log in :
+      form
+        p.loginText
+          | Login: 
+          input.login(type="text" placeholder="Username" required)/
+        p.passwordText
+          | Password: 
+          input.password(type="text" placeholder="Password" required)/
+      center
+        a(href='http://localhost:3000/auth/google')
+          button Login
